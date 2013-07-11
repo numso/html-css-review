@@ -1,0 +1,123 @@
+@import shared
+
+html
+  min-width: 700px
+
+#header
+  position: absolute
+  z-index: 1
+  min-width: 620px
+  left: 0
+  right: 0
+  padding: 20px 40px
+  background-color: #ddd
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.5)
+
+  .title
+    display: inline-block
+    font-size: 30px
+    font-weight: bold
+
+  .btn
+    float: right
+    padding: 10px 20px
+
+    &:hover
+      cursor: pointer
+      background-color: #bbb
+
+
+.section
+  position: relative
+  width: 50%
+  height: 100%
+
+  &#mailbox
+    float: left
+    background-color: rgb(190, 190, 255)
+
+    .msg
+      position: relative
+      background-color: white
+      margin-top: 10px
+      height: 150px
+      width: 100%
+
+      &.active
+        background-color: #aaa
+
+        .data
+          color: #fff !important
+
+      &:hover
+        background-color: #ddd
+        cursor: pointer
+
+      .contents
+        position: absolute
+        top: 10px
+        bottom: 10px
+        left: 10px
+        right: 10px
+
+        img
+          width: 80px
+          float: left
+
+        .rest
+          position: absolute
+          padding: 40px
+          top: 0
+          bottom: 0
+          left: 70px
+          right: 0
+
+          .label
+            width: 60px
+            display: inline-block
+
+          .data
+            display: inline-block
+            color: #aaa
+
+  &#messageBox
+    display: inline-block
+    background-color: rgb(219, 255, 181)
+
+    .top
+      position: fixed
+      background-color: rgb(0, 141, 17)
+      height: 100px
+      width: 100%
+
+      img
+        width: 80px
+        float: left
+        padding: 10px
+
+      .text
+        padding: 10px
+
+        .label
+          display: inline-block
+          width: 60px
+
+        .data
+          display: inline-block
+    .msg-body
+      margin-top: 100px
+      .paragraph
+        padding: 10px 0
+
+  .inner-container
+    position: absolute
+    overflow: auto
+    top: 78px
+    bottom: 0
+    width: 100%
+
+    .inner-box
+      position: absolute
+      height: 100%
+      left: 10px
+      right: 10px
