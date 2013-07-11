@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  min-width: 700px;
+}
+#header {
+  position: absolute;
+  z-index: 1;
+  min-width: 620px;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  background-color: #ddd;
+  -webkit-box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+#header .title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header .btn {
+  float: right;
+  padding: 10px 20px;
+}
+#header .btn:hover {
+  cursor: pointer;
+  background-color: #bbb;
+}
+.section {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.section#mailbox {
+  float: left;
+  background-color: #bebeff;
+}
+.section#mailbox .msg {
+  position: relative;
+  background-color: #fff;
+  margin-top: 10px;
+  height: 150px;
+  width: 100%;
+}
+.section#mailbox .msg.active {
+  background-color: #aaa;
+}
+.section#mailbox .msg.active .data {
+  color: #fff !important;
+}
+.section#mailbox .msg:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.section#mailbox .msg .contents {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.section#mailbox .msg .contents img {
+  width: 80px;
+  float: left;
+}
+.section#mailbox .msg .contents .rest {
+  position: absolute;
+  padding: 40px;
+  top: 0;
+  bottom: 0;
+  left: 70px;
+  right: 0;
+}
+.section#mailbox .msg .contents .rest .label {
+  width: 60px;
+  display: inline-block;
+}
+.section#mailbox .msg .contents .rest .data {
+  display: inline-block;
+  color: #aaa;
+}
+.section#messageBox {
+  display: inline-block;
+  background-color: #dbffb5;
+}
+.section#messageBox .top {
+  position: fixed;
+  background-color: #008d11;
+  height: 100px;
+  width: 100%;
+}
+.section#messageBox .top img {
+  width: 80px;
+  float: left;
+  padding: 10px;
+}
+.section#messageBox .top .text {
+  padding: 10px;
+}
+.section#messageBox .top .text .label {
+  display: inline-block;
+  width: 60px;
+}
+.section#messageBox .top .text .data {
+  display: inline-block;
+}
+.section#messageBox .msg-body {
+  margin-top: 100px;
+}
+.section#messageBox .msg-body .paragraph {
+  padding: 10px 0;
+}
+.section .inner-container {
+  position: absolute;
+  overflow: auto;
+  top: 78px;
+  bottom: 0;
+  width: 100%;
+}
+.section .inner-container .inner-box {
+  position: absolute;
+  height: 100%;
+  left: 10px;
+  right: 10px;
+}
+#footer {
+  color: #fff;
+}
